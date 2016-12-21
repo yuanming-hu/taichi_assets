@@ -1,0 +1,529 @@
+{
+    "media": [
+        {
+            "name": "red_absorb",
+            "phase_function": {
+                "type": "isotropic"
+            },
+            "max_bounces": 1024,
+            "type": "homogeneous",
+            "sigma_a": [
+                50.0,
+                200.0,
+                200.0
+            ],
+            "sigma_s": 0.0,
+            "density": 5.0
+        }
+    ],
+    "bsdfs": [
+        {
+            "name": "Picture",
+            "albedo": "textures/Abstract.jpg",
+            "type": "lambert"
+        },
+        {
+            "name": "Floor",
+            "albedo": "textures/WoodFloor.jpg",
+            "type": "rough_plastic",
+            "ior": 1.25,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "ggx",
+            "roughness": 0.25
+        },
+        {
+            "name": "Glass",
+            "albedo": 1.0,
+            "type": "dielectric",
+            "ior": 1.5,
+            "enable_refraction": true
+        },
+        {
+            "name": "Vase",
+            "albedo": 0.1,
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "beckmann",
+            "roughness": 0.1
+        },
+        {
+            "name": "Legs",
+            "albedo": 0.1,
+            "type": "rough_conductor",
+            "distribution": "ggx",
+            "roughness": 0.3,
+            "material": "Cr"
+        },
+        {
+            "name": "Fruits",
+            "albedo": [
+                0.48689699172973633,
+                0.006798999849706888,
+                0.010755999945104122
+            ],
+            "type": "lambert"
+        },
+        {
+            "name": "Cushions",
+            "albedo": "textures/Fabric.jpg",
+            "type": "lambert"
+        },
+        {
+            "name": "WhitePaint",
+            "albedo": 1.0,
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "beckmann",
+            "roughness": 0.1
+        },
+        {
+            "name": "Sofa",
+            "albedo": 1.0,
+            "type": "rough_plastic",
+            "ior": 1.5,
+            "thickness": 1.0,
+            "sigma_a": 0.0,
+            "distribution": "beckmann",
+            "roughness": 0.25
+        },
+        {
+            "name": "Twigs",
+            "albedo": [
+                0.15232500433921814,
+                0.032489001750946045,
+                0.01934099942445755
+            ],
+            "type": "lambert"
+        },
+        {
+            "name": "Walls",
+            "albedo": 1.0,
+            "type": "lambert"
+        },
+        {
+            "name": "Rug",
+            "albedo": [
+                0.4819522500038147,
+                0.006584956776350737,
+                0.010397803038358688
+            ],
+            "type": "lambert"
+        }
+    ],
+    "primitives": [
+        {
+            "transform": {},
+            "int_medium": "red_absorb",
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh019.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "int_medium": "red_absorb",
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh033.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh020.wo3",
+            "bsdf": "Vase"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh016.wo3",
+            "bsdf": "Vase"
+        },
+        {
+            "transform": {},
+            "int_medium": "red_absorb",
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh017.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "int_medium": "red_absorb",
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh014.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "int_medium": "red_absorb",
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh025.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "int_medium": "red_absorb",
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh013.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "int_medium": "red_absorb",
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh021.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh022.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "int_medium": "red_absorb",
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh015.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh024.wo3",
+            "bsdf": "Vase"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh026.wo3",
+            "bsdf": "Vase"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh034.wo3",
+            "bsdf": "Twigs"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh029.wo3",
+            "bsdf": "Fruits"
+        },
+        {
+            "transform": {},
+            "int_medium": "red_absorb",
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh018.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {
+                "position": [
+                    -0.5023890137672424,
+                    0.0,
+                    0.0
+                ]
+            },
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh032.wo3",
+            "bsdf": "Picture"
+        },
+        {
+            "transform": {},
+            "int_medium": "red_absorb",
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh035.wo3",
+            "bsdf": "Glass"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh031.wo3",
+            "bsdf": "WhitePaint"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh012.wo3",
+            "bsdf": "WhitePaint"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh011.wo3",
+            "bsdf": "WhitePaint"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh010.wo3",
+            "bsdf": "WhitePaint"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh028.wo3",
+            "bsdf": "Sofa"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh009.wo3",
+            "bsdf": "Cushions"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh007.wo3",
+            "bsdf": "Cushions"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh006.wo3",
+            "bsdf": "Sofa"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh030.wo3",
+            "bsdf": "Sofa"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh005.wo3",
+            "bsdf": "Legs"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh004.wo3",
+            "bsdf": "Cushions"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh023.wo3",
+            "bsdf": "WhitePaint"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": true,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh002.wo3",
+            "bsdf": "Legs"
+        },
+        {
+            "transform": {
+                "scale": [
+                    1.0,
+                    1.0,
+                    2.308929920196533
+                ]
+            },
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh008.wo3",
+            "bsdf": "Floor"
+        },
+        {
+            "transform": {
+                "scale": [
+                    1.0,
+                    1.0,
+                    2.284019947052002
+                ]
+            },
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh027.wo3",
+            "bsdf": "Walls"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh003.wo3",
+            "bsdf": "Rug"
+        },
+        {
+            "transform": {},
+            "type": "mesh",
+            "smooth": false,
+            "backface_culling": false,
+            "recompute_normals": false,
+            "file": "models/Mesh001.wo3",
+            "bsdf": "WhitePaint"
+        },
+        {
+            "transform": {
+                "position": [
+                    -4.5089111328125,
+                    1.8144123554229736,
+                    -3.771206855773926
+                ],
+                "scale": 0.16415661573410034
+            },
+            "power": 120.0,
+            "type": "sphere",
+            "bsdf": {
+                "albedo": 1.0,
+                "type": "null"
+            }
+        }
+    ],
+    "camera": {
+        "tonemap": "filmic",
+        "resolution": [
+            1280,
+            720
+        ],
+        "reconstruction_filter": "tent",
+        "transform": {
+            "position": [
+                0.27696168422698975,
+                1.0179537534713745,
+                -5.1929192543029785
+            ],
+            "look_at": [
+                -1.6046379804611206,
+                0.894584059715271,
+                -1.3297884464263916
+            ],
+            "up": [
+                0.0,
+                1.0,
+                0.0
+            ]
+        },
+        "type": "pinhole",
+        "fov": 50.0
+    },
+    "integrator": {
+        "min_bounces": 0,
+        "max_bounces": 64,
+        "enable_consistency_checks": false,
+        "enable_two_sided_shading": true,
+        "type": "path_tracer",
+        "enable_light_sampling": true,
+        "enable_volume_light_sampling": true
+    },
+    "renderer": {
+        "overwrite_output_files": true,
+        "adaptive_sampling": true,
+        "enable_resume_render": false,
+        "stratified_sampler": true,
+        "scene_bvh": true,
+        "spp": 64,
+        "spp_step": 16,
+        "checkpoint_interval": "0",
+        "timeout": "0",
+        "output_file": "living-room-3.png",
+        "resume_render_file": "TungstenRenderState.dat",
+        "hdr_output_file": "living-room-3.exr"
+    }
+}
