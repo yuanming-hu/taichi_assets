@@ -1,4 +1,4 @@
-#include <taichi/levelset/sdf.h>
+#include <taichi/math/sdf.h>
 #include <taichi/common/loader.h>
 
 TC_NAMESPACE_BEGIN
